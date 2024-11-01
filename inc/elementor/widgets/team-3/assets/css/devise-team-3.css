@@ -1,0 +1,137 @@
+.team-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-3.team-title-top .team-member {
+  order: 2;
+}
+
+.team-3 .s-link {
+  margin: 20px 0;
+}
+
+.team-3 .team-member,
+.team-3 .team-member .team-img {
+  position: relative;
+}
+
+.team-3 .team-member {
+  overflow: hidden;
+}
+
+.team-3 .team-member,
+.team-3 .team-member .team-img {
+  position: relative;
+  margin: 0 auto;
+}
+
+.team-3 .team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.team-3 .team-member:hover .team-hover .description {
+  top: 50%;
+}
+
+.team-3 .team-member:hover .team-hover,
+.team-3 .team-member:hover .team-hover .description,
+.team-3 .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+
+.team-3 .team-hover .description {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+
+.team-3 .description,
+.team-3 .description h4,
+.team-3 .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+
+.team-3 .team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+
+.team-3 .team-member:hover .team-hover,
+.team-3 .team-member:hover .team-hover .description,
+.team-3 .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+
+.team-3 .team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+
+.team-3 .description,
+.team-3 .description h4,
+.team-3 .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+
+.team-3 .team-member .s-link a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.team-3 .team-title {
+  position: static;
+  padding: 20px 0 10px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.team-3 .team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.team-3 .team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+}
+
+.team-3 .elementor-icon.elementor-social-icon {
+  font-size: var(--icon-size,15px);
+  line-height: var(--icon-size,25px);
+  width: calc(var(--icon-size, 15px) + (2 * var(--icon-padding, .5em)));
+  height: calc(var(--icon-size, 15px) + (2 * var(--icon-padding, .5em)));
+}
